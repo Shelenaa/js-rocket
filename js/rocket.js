@@ -13,6 +13,20 @@ var changeState = function (state) {
 			countdownNumber = countdownNumber -1;
 			document.getElementById('countdown').innerHTML = countdownNumber;
 				
+			if (countdownNumber > 4 && countdownNumber <= 7) {
+				//yeay
+				document.getElementById('yeay').className = 'yeay show';
+			} else{
+				document.getElementById('yeay').className = 'yeay'
+			}
+
+			if (countdownNumber > 1 && countdownNumber <= 4){
+				//ohno
+				document.getElementById('ohno').className = 'ohno show';
+			} else{
+				document.getElementById('ohno').className = 'ohno';
+			}
+			
 			if (countdownNumber <= 0) { 
 				changeState(3);	
 			};

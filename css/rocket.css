@@ -25,15 +25,56 @@
 	height: 20px;
 	
  }
+.yeay{
+	position: absolute;
+	bottom: 438px;
+	right: 50%;
+	background: url('../img/happy.png') no-repeat 0 0;
+	width: 298px;
+	height: 182px;
+	margin-right: -439px;
+	display: none;
+}
+.yeay.show{
+	display: block;
+}
+.ohno{
+	position: absolute;
+	bottom: 438px;
+	left: 50%;
+	background: url('../img/ohno.png') no-repeat 0 0;
+	width: 296px;
+	height: 96px;
+	margin-left: -371px;
+	display: none;
+}
+.ohno.show{
+	display: block;
+}
+
 .rocket{
 	position: absolute;
 	left: 50%;
-	bottom: 20px;
-	width: 20px;
-	height: 100px;
-	background-color: blue;
+	bottom: 10px;
+	width: 372px;
+	height: 621px;
+	margin-left: -185px;
+	background: url('../img/rocket-state1.png') no-repeat 0 0;
 	transition: bottom 10000ms;
 }
+
+/*rocket bg image*/
+body.body-state2 .rocket{  
+	background-image: url('../img/rocket-state1.png')
+}
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	
+}
+body.body-state5 .rocket{
+	background-image: url('../img/Kaboem.png')
+}
+
 
 body.body-state1 .rocket{
 	transition: none;
